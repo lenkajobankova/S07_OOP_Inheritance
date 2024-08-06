@@ -3,11 +3,7 @@ public class Circle {
     protected double radius;
 
     public Circle(double radius) {
-        if (radius < 0){
-            this.radius = 0;
-        } else {
-            this.radius = radius;
-        }
+        this.radius = radius < 0 ? 0 : radius;
 
     }
 
